@@ -1,0 +1,21 @@
+.descripcion-btn{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+
+
+.btn-a{
+    width: 100px;
+    height: 40px;
+    background-color: #64c630;
+    color: white;
+    font-family: Anton, sans-serif;
+    border: none;
+}
+
+.btn-a:hover{
+    background-color: black  ;
+    
+}

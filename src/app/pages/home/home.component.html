@@ -1,0 +1,44 @@
+<div class=>
+    <div class="container">
+        <div class="logo text-center">
+            <img src="imagenes/Logo.avif" class="img-fluid" alt="Logo" style="width: 500px; height: 500px;">
+        </div>
+        <div class="section text-center mb-5">
+            <h2>Recomendados</h2>
+            <hr>
+            <div id="carouselExampleCaptions" class="carousel slide mx-auto mt-5" style="width: 600px" >
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div 
+                    *ngFor="let vinilo of vinilos" 
+                    [class]="vinilo.id == 1 ? 'carousel-item active' : 'carousel-item'">
+                    <img [src]="vinilo.cover" class="d-block w-100" [alt]="vinilo.album" style="height: 600px; filter: blur(4px);">   
+                    <div class="carousel-caption d-none d-md-block" [ngSwitch]="vinilo.id" style=" color: white;">
+                        <span *ngSwitchCase="1"><h5>{{vinilo.album}}</h5><p>{{vinilo.artista}}</p></span>
+                        <span *ngSwitchCase="2"><h5>{{vinilo.album}}</h5><p>{{vinilo.artista}}</p></span>
+                        <span *ngSwitchCase="3"><h5>{{vinilo.album}}</h5><p>{{vinilo.artista}}</p></span>
+                        <span *ngSwitchDefault>Vinilo desconocido</span>
+                        </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="descripcion-btn">
+          <div class="btn">
+              <button (click)="onClickVinilos()" type="button" class="btn-a">Más Vinilos</button>
+          </div>
+      </div>
+    </div>
+</div>

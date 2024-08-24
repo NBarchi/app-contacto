@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "album": "Blond",
+        "artista": "Frank Ocean",
+        "genero": "R&B alternativo / Art pop / Neo soul",
+        "descripcion": "Este álbum ha establecido muchas conexiones personales con los oyentes, ya que aprovecha las emociones a través de la identidad. “Blonde” trata sobre la identidad propia, el amor y la pérdida,  que son evidentes en cada canción. “Blonde” también mezcla R&B con música experimental, lo cual es bastante poco común.",
+        "precio": 50.99,
+        "cover": "imagenes/blonde.jpg"
+    },
+    {
+        "id":2,
+        "album": "In Rainbows",
+        "artista": "Radiohead",
+        "genero": "Art Rock / Rock Alternativo ",
+        "descripcion": "“In Rainbows” es una meditación sobre el amor, la vida y la muerte que sigue un arco argumental flexible. Desde el divertido comienzo “15 Step”, queda claro que el narrador está luchando con relaciones fallidas y la aterradora inevitabilidad de la muerte.",
+        "precio": 36.50,
+        "cover": "imagenes/InRainbows.webp"
+    },
+    {
+        "id":3,
+        "album": "Dark Side of the Moon",
+        "artista": "Pink Floyd",
+        "genero": "Rock progresivo / Rock Psicodélico ",
+        "descripcion": "The Dark Side of the Moon explora temas como el conflicto, la codicia, el tiempo, la muerte y las enfermedades mentales.",
+        "precio": 31.98,
+        "cover": "imagenes/DarkSideOfTheMoon.webp"
+    }
+
+]    

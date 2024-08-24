@@ -1,0 +1,22 @@
+
+
+<h1 style="text-align: center; font-family: Anton, sans-serif ; margin-top: 50px;">TODOS</h1>
+<hr style="width:100px; margin: auto; height: 2px; background-color: rgb(0, 0, 10); color: rgb(0, 0, 10); border: 0;">
+<section class="productos" id="idProductos">
+    <div class="lista-producto" *ngFor="let vinilo of vinilos">
+        <div class="imgagen-producto">
+            <img [src]="vinilo.cover"[alt]="vinilo.album">
+        </div>
+        <div class="descripcion">
+            <h3 class="title"><strong>{{vinilo.album}}</strong></h3>
+            <strong>Artista:</strong> {{vinilo.artista}}<br>
+            <p><strong>Género:</strong> {{vinilo.genero}}</p>
+            <span><strong>Precio: </strong>${{vinilo.precio}}</span>
+            <div class="descripcion-btn">
+                <div class="btn">
+                    <button (click)="onClickVinilo(vinilo)" type="button" class="btn-a">Saber Más</button>
+                </div>
+            </div>
+        </div>                  
+    </div>        
+</section>

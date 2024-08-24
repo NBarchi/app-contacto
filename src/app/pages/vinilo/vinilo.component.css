@@ -1,0 +1,54 @@
+
+
+.section-shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 82px;
+}
+
+.info-container{
+    background-color: transparent;
+    align-content: center;
+    width: 30%;
+    padding: 10px;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    gap: 15px;
+    padding: 10px;
+    height: fit-content;    
+}
+
+.info h1{
+    font-size: 50px;
+}
+
+img{
+    width: 600px;
+    height: 600px;
+}
+
+
+.barra-info{
+    display: flex;
+    margin-top: 50px;
+    padding-left: 50px;
+    font-size: smaller;
+    gap: 10px;
+}
+
+.barra-info a{
+    text-decoration: none;
+    color: black;
+}
+
+.barra-info a:hover{
+    text-decoration: underline;
+}
+

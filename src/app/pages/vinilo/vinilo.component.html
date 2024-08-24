@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="barra-info">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        /
+        <a routerLink="/vinilos" routerLinkActive="active">Vinilos</a>
+        / 
+        <h6>{{vinilos?.album}}</h6>
+    </div>
+</div>
+<div class="item-container mb-5">
+    <div class="section-shop">
+        <div class="img">
+            <img [src]="vinilos?.cover" [alt]="vinilos?.album" class="img-fluid">
+        </div>
+        <div class="info-container">
+            <div class="info">
+                <h1>{{vinilos?.album}}</h1>
+                <h6>by {{vinilos?.artista}}</h6>
+                <h6>{{vinilos?.genero}}</h6>
+                <span>${{vinilos?.precio}}</span>
+                <p>{{vinilos?.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+</div>
